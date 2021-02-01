@@ -265,7 +265,6 @@ header {
   font-weight: 300;
   word-spacing: 2vh;
   letter-spacing: 1vh;
-  filter: drop-shadow(0 0 1vh #ffffff81);
 }
 
 #parent img {
@@ -326,7 +325,6 @@ header {
   font-family: Montserrat;
   font-size: 230%;
   font-weight: 600;
-  filter: drop-shadow(0 0 1vh #00e5ffa1);
 }
 
 .titlethin {
