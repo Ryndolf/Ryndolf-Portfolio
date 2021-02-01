@@ -1,0 +1,440 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.shapereds {
+  display: flex;
+  overflow: visible;
+  height: 10vh;
+}
+
+.shapered {
+  height: 20vh;
+  width: 100%;
+  clip-path: polygon(50% 25%, 100% 50%, 50% 75%, 0% 50%);
+  background-color: #000000;
+  transition: 0.2s ease;
+}
+
+.shapered:hover {
+  background-color: #ff003d;
+}
+
+.shapereder {
+  height: 20vh;
+  width: 40vh;
+  clip-path: polygon(50% 25%, 100% 50%, 50% 75%, 0% 50%);
+  background-color: #000000;
+  transition: 0.2s ease;
+}
+
+.shapereder:hover {
+  background-color: #ff003d;
+}
+
+.shapeblues {
+  display: flex;
+  overflow: visible;
+  height: 0vh;
+}
+
+.shapeblue {
+  height: 20vh;
+  width: 100%;
+  clip-path: polygon(0% 0%, 50% 25%, 50% 75%, 0% 50%);
+  background-color: #000000;
+  transition: 0.2s ease;
+}
+
+.shapeblue:hover {
+  background-color: #00e5ff;
+}
+
+.shapeblueer {
+  margin-top: 10vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 20vh;
+  width: 100%;
+  clip-path: polygon(0% 0%, 50% 25%, 50% 75%, 0% 50%);
+  background-color: #000000;
+  transition: 0.2s ease;
+}
+
+.shapeblueer:hover {
+  background-color: #00e5ff;
+}
+
+.shapewhites {
+  display: flex;
+  overflow: visible;
+  height: 5vh;
+}
+
+.shapewhite {
+  height: 20vh;
+  width: 100%;
+  clip-path: polygon(100% 0%, 50% 25%, 50% 75%, 100% 50%);
+  background-color: #000000;
+  transition: 0.2s ease;
+}
+
+.shapewhite:hover {
+  background-color: #ffffff;
+}
+
+.shapewhiteer {
+  height: 20vh;
+  width: 40vh;
+  clip-path: polygon(100% 0%, 50% 25%, 50% 75%, 100% 50%);
+  background-color: #000000;
+  transition: 0.2s ease;
+}
+
+.shapewhiteer:hover {
+  background-color: #ffffff;
+}
+
+.shapered02 {
+  height: 20vh;
+  width: 20vh;
+  clip-path: polygon(100% 25%, 0% 50%, 100% 75%);
+  background-color: #000000;
+  transition: 0.2s ease;
+}
+
+.shapered02:hover {
+  background-color: #ff003d;
+}
+
+.shapered01 {
+  height: 20vh;
+  width: 20vh;
+  clip-path: polygon(0% 25%, 100% 50%, 0% 75%);
+  background-color: #000000;
+  transition: 0.2s ease;
+}
+
+.shapered01:hover {
+  background-color: #ff003d;
+}
+
+.shapewhite01 {
+  height: 20vh;
+  width: 20vh;
+  clip-path: polygon(100% 0%, 0% 25%, 0% 75%, 100% 50%);
+  background-color: #000000;
+  transition: 0.2s ease;
+}
+
+.shapewhite01:hover {
+  background-color: #ffffff;
+}
+
+.shapeblue02 {
+  height: 20vh;
+  width: 20vh;
+  clip-path: polygon(0% 0%, 100% 25%, 100% 75%, 0% 50%);
+  background-color: #000000;
+  transition: 0.2s ease;
+}
+
+.shapeblue02:hover {
+  background-color: #00e5ff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 800vh;
+  background-color: #000000;
+  baackground-image: linear-gradient(
+    to top right,
+    rgb(17, 17, 17),
+    rgb(0, 0, 0)
+  );
+}
+
+header {
+  display: flex;
+  background: rgb(0, 0, 0);
+  position: fixed;
+  height: 16%;
+  width: 100%;
+  border-bottom: 0.4vh solid #00e5ff;
+  z-index: 3;
+}
+
+#menu {
+  margin: auto;
+  width: 83%;
+  display: flex;
+}
+
+#menu li {
+  display: inline-block;
+}
+
+#menu li a {
+  text-decoration: none;
+  letter-spacing: 0.8vh;
+  font-size: 2vh;
+  color: white;
+  font-family: Montserrat;
+}
+
+#menu li a:hover {
+  color: #00e5ff;
+  transition: 0.6s ease;
+}
+
+#menu li.active a {
+  color: #00e5ff;
+}
+
+#space {
+  width: 20vh;
+}
+
+.logo {
+  position: fixed;
+  z-index: 1;
+  bottom: 2%;
+  right: 1.5%;
+}
+
+.logo img {
+  padding: 1vh;
+  width: 7vh;
+  height: 7vh;
+  border-radius: 50%;
+  border: 0.3vh solid #00e5ff;
+  background-color: #000000;
+  filter: drop-shadow(0 0 2vh #00e5ff8e);
+}
+
+.title {
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2% 6%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 0.5vh solid #ffffff;
+}
+
+.title h1 {
+  color: white;
+  font-family: Montserrat;
+  font-size: 250%;
+  font-weight: 300;
+  word-spacing: 2vh;
+  letter-spacing: 1vh;
+}
+
+#parent img {
+  pointer-events: none;
+  opacity: 0.2;
+  padding-top: 16.5vh;
+  position: absolute;
+  height: 89.5vh;
+  width: 100%;
+  top: 0;
+}
+
+#effect {
+  padding-top: 6.1vh;
+  width: 100%;
+  opacity: 1;
+}
+
+#divtwo,
+#divthree,
+#divfour,
+#divfive,
+#divsix {
+  margin: auto;
+  width: 84%;
+}
+
+#divonetwo,
+#divtwothree,
+#divthreefour,
+#divfourfive,
+#divfivesix {
+  height: 3.1%;
+}
+
+#aboutbg {
+  height: 100%;
+  top: 101%;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.4;
+  background-image: url("dino1.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#aboutimage {
+  padding-bottom: 15%;
+  display: flex;
+}
+
+#aboutimage img {
+  width: 25%;
+  height: auto;
+  padding-left: 20%;
+}
+
+.aboutcontent {
+  width: 50%;
+  color: #00e5ff;
+  font-family: Montserrat;
+  font-size: 180%;
+  font-weight: 300;
+  padding-top: 8.5%;
+}
+
+.titlethick {
+  color: #00e5ff;
+  font-family: Montserrat;
+  font-size: 230%;
+  font-weight: 600;
+}
+
+.titlethin {
+  width: 50%;
+  color: #00e5ff;
+  font-family: Montserrat;
+  font-size: 230%;
+  font-weight: 300;
+  padding-top: 8.5%;
+}
+
+#line {
+  border-radius: 50vh;
+  top: 126%;
+  left: 25%;
+  position: absolute;
+  width: 30%;
+  height: 0.1%;
+  background-color: #00e5ff;
+}
+
+.abouttitlecontent {
+  padding-top: 20%;
+  padding-bottom: 35%;
+  color: #00e5ff;
+  font-family: Montserrat;
+  font-size: 120%;
+  font-weight: 300;
+  line-height: 150%;
+}
+
+#exp {
+  display: flex;
+  padding-top: 6%;
+  padding-bottom: 5%;
+}
+
+.expbig {
+  text-decoration: none;
+  color: #00e5ff;
+  font-family: Montserrat;
+  font-size: 175%;
+  font-weight: 400;
+}
+
+.expsmall {
+  color: #00e5ff;
+  font-family: Montserrat;
+  font-size: 130%;
+  font-weight: 100;
+  padding-top: 2%;
+}
+
+#expleft {
+  width: 50%;
+}
+
+#expright {
+  width: 50%;
+}
+
+#expthree ,
+#expfour {
+  padding-top: 10vh;
+}
+
+#logostop {
+  display: flex;
+  padding-top: 4.5%;
+}
+
+#logosbottom {
+  display: flex;
+  padding-top: 20vh;
+}
+
+#logos img {
+  width: 70%;
+}
+
+#ps,
+#lr,
+#ae,
+#ai,
+#xd,
+#c4d {
+  padding-right: 20%;
+}
+
+.contactleft {
+  padding-top: 5vh;
+  padding-bottom: 3.5%;
+  color: #00e5ff;
+  font-family: Montserrat;
+  font-size: 120%;
+  font-weight: 400;
+}
+
+#contact {
+  display: flex;
+  padding-top: 2%;
+}
+
+#btns {
+  padding-left: 20%;
+  padding-top: 1.8vh;
+}
+
+.btn {
+  width: fit-content;
+  margin-top: 11%;
+  display: block;
+  text-decoration: none;
+  color: #00e5ff;
+  font-family: Montserrat;
+  font-size: 90%;
+  font-weight: 500;
+  padding: 2vh;
+  background-color: #00e5ff2a;
+  border-radius: 5vh;
+  border: 0.3vh solid #00e5ff;
+}
+
+.btn:hover {
+  color: #000000;
+  background-color: #00e5ff;
+  transition: 0.6s ease;
+}
