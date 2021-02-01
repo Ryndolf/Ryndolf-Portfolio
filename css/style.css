@@ -181,7 +181,7 @@ body {
   background-image: url("bg.svg");
   background-size: cover;
   background-position: center;
-  background-color: #ffffff;
+  background-color: #000000;
   baackground-image: linear-gradient(
     to bottom right,
     rgb(17, 17, 17),
