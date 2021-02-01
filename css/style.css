@@ -149,15 +149,41 @@ html {
   scroll-behavior: smooth;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+#aboutbg {
+  height: 100%;
+  top: 101%;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.4;
+  background-image: url("dino1.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#aboutscroll {
+  pointer-events: none;
+  bottom: -110%;
+  position: absolute;
+  width: 10%;
+  height: 10%;
+}
 
 body {
   height: 800vh;
+  background-image: url("bg.svg");
+  background-size: cover;
+  background-position: center;
   background-color: #000000;
   baackground-image: linear-gradient(
-    to top right,
+    to bottom right,
     rgb(17, 17, 17),
     rgb(0, 0, 0)
   );
@@ -218,7 +244,7 @@ header {
   border-radius: 50%;
   border: 0.3vh solid #00e5ff;
   background-color: #000000;
-  filter: drop-shadow(0 0 2vh #00e5ff8e);
+  filter: drop-shadow(0 0 1vh #00e5ff59);
 }
 
 .title {
@@ -233,12 +259,13 @@ header {
 }
 
 .title h1 {
-  color: white;
+  color: #ffffff;
   font-family: Montserrat;
   font-size: 250%;
   font-weight: 300;
   word-spacing: 2vh;
   letter-spacing: 1vh;
+  filter: drop-shadow(0 0 1vh #ffffff81);
 }
 
 #parent img {
@@ -274,21 +301,6 @@ header {
   height: 3.1%;
 }
 
-#aboutbg {
-  height: 100%;
-  top: 101%;
-  left: 0;
-  width: 100%;
-  position: absolute;
-  z-index: -1;
-  opacity: 0.4;
-  background-image: url("dino1.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 #aboutimage {
   padding-bottom: 15%;
   display: flex;
@@ -314,6 +326,7 @@ header {
   font-family: Montserrat;
   font-size: 230%;
   font-weight: 600;
+  filter: drop-shadow(0 0 1vh #00e5ffa1);
 }
 
 .titlethin {
@@ -333,6 +346,31 @@ header {
   width: 30%;
   height: 0.1%;
   background-color: #00e5ff;
+}
+
+#more {
+  position: absolute;
+  padding-top: 10%;
+}
+
+.more {
+  width: fit-content;
+  display: block;
+  text-decoration: none;
+  color: #00e5ff;
+  font-family: Montserrat;
+  font-size: 90%;
+  font-weight: 500;
+  padding: 2vh;
+  background-color: #00e5ff2a;
+  border-radius: 5vh;
+  border: 0.3vh solid #00e5ff;
+}
+
+.more:hover {
+  color: #000000;
+  background-color: #00e5ff;
+  transition: 0.6s ease;
 }
 
 .abouttitlecontent {
@@ -375,7 +413,7 @@ header {
   width: 50%;
 }
 
-#expthree ,
+#expthree,
 #expfour {
   padding-top: 10vh;
 }
