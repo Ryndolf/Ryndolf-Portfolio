@@ -427,19 +427,17 @@ header {
 }
 
 #logos img {
-  width: 70%;
+  width: 50%;
 }
 
 #ps,
 #lr,
 #ae,
-#ai,
 #pr,
-#vs,
-#html,
+#xd,
+#c4d,
 #python,
-#pc,
-#c4d {
+#html {
   padding-right: 10%;
 }
 
@@ -537,7 +535,7 @@ header {
 }
 
 .btn {
-  width: fit-content;
+  text-align: center;
   margin-top: 11%;
   display: block;
   text-decoration: none;
