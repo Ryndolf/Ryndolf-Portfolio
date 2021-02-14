@@ -3,8 +3,18 @@
 
 <head>
   <title>RYNDOLF</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
-  <link rel="stylesheet" href="style.css" />
+  <link id="theme" rel="stylesheet" type="text/css" href="css/styledark.css" />
+  <link rel="stylesheet" href="styledark.css" />
+  <script> 
+    function toggleTheme() { 
+        var theme = document.getElementsByTagName('link')[0]; 
+        if (theme.getAttribute('href') == 'css/styledark.css') { 
+            theme.setAttribute('href', 'css/stylelight.css'); 
+        } else { 
+            theme.setAttribute('href', 'css/styledark.css'); 
+        } 
+    } 
+  </script> 
 </head>
 
 <body>
@@ -12,20 +22,20 @@
     <div id="menu">
       <li class=""><a href="#parent">HOME</a></li>
       <li id="space"></li>
-      <li><a href="#divonetwo">ABOUT</a></li>
+      <li><a href="#divtwo">ABOUT</a></li>
       <li id="space"></li>
-      <li><a href="#divtwothree">EXPERIENCE</a></li>
+      <li><a href="#divthree">EXPERIENCE</a></li>
       <li id="space"></li>
-      <li><a href="#divthreefour">SKILLS</a></li>
+      <li><a href="#divfour">SKILLS</a></li>
       <li id="space"></li>
-      <li><a href="#divfourfive">PORTFOLIO</a></li>
+      <li><a href="#divfive">PORTFOLIO</a></li>
       <li id="space"></li>
-      <li><a href="#divfivesix">CONTACT</a></li>
+      <li><a href="#divsix">CONTACT</a></li>
     </div>
   </header>
   <div class="logo">
     <a href="#parent">
-      <img src="Ryndolf.svg" />
+      <img src="svgs/Ryndolf.svg" />
     </a>
   </div>
   <div id="parent">
@@ -294,8 +304,8 @@
   <div class="title">
     <h1><span>JONATHAN</span>&nbsp<span>RYNDOLF</span></h1>
   </div>
-  <div id="divonetwo"></div>
-  <div id="divtwo">
+  <div id="divtwo"></div>
+  <div class="divs">
     <div id="aboutbg"></div>
     <div id="more">
       <a href="#aboutscroll" class="more">MORE 🡪</a>
@@ -316,32 +326,32 @@
         1st Year Medical Student at<br />
         Sree Balaji Medical College & Hospitals
       </div>
-      <img src="doc.svg" />
+      <img src="svgs/doc.svg" />
     </div>
     <div id="aboutimage">
       <div class="aboutcontent">
         Placed 2nd in Wisteria 'Game of tones'<br />
         Creative License at Academy of Digital Arts
       </div>
-      <img src="designer.svg" />
+      <img src="svgs/designer.svg" />
     </div>
     <div id="aboutimage">
       <div class="aboutcontent">
-        New to Coding,<br />
-        Been working with Python & HTML
+        New to Coding, been working with<br />
+        Python, HTML & CSS
       </div>
-      <img src="coder.svg" />
+      <img src="svgs/coder.svg" />
     </div>
     <div id="aboutimage">
       <div class="aboutcontent">
         Event Photographer,<br />
         Placed 3rd in Rendezvous Culturals 2019
       </div>
-      <img src="dd.png" />
+      <img src="svgs/dd.png" />
     </div>
   </div>
-  <div id="divtwothree"></div>
-  <div id="divthree">
+  <div id="divthree"></div>
+  <div class="divs">
     <div id="pagezero">
       <div class="titlethick">EXPERIENCE</div>
     </div>
@@ -382,55 +392,54 @@
     </div>
   </div>
   </div>
-  <div id="divthreefour"></div>
-  <div id="divfour">
+  <div id="divfour"></div>
+  <div class="divs">
     <div id="pagezero">
       <div class="titlethick">SKILLS</div>
     </div>
     <div id="logos">
       <div id="logostop">
-        <div id="ps">
-          <img src="ps.svg" />
+        <div class="logogaps">
+          <img src="svgs/ps.svg" />
         </div>
-        <div id="lr">
-          <img src="lr.svg" />
+        <div class="logogaps">
+          <img src="svgs/lr.svg" />
         </div>
-        <div id="ae">
-          <img src="ae.svg" />
+        <div class="logogaps">
+          <img src="svgs/ae.svg" />
         </div>
-        <div id="pr">
-          <img src="pr.svg" />
+        <div class="logogaps">
+          <img src="svgs/pr.svg" />
         </div>
-        <div id="ai">
-          <img src="ai.svg" />
+        <div class="ai">
+          <img src="svgs/ai.svg" />
         </div>
       </div>
       <div id="logosbottom">
-        <div id="xd">
-          <img src="xd.svg" />
+        <div class="logogaps">
+          <img src="svgs/xd.svg" />
         </div>
-        <div id="c4d">
-          <img src="c4d.svg" />
+        <div class="logogaps">
+          <img src="svgs/c4d.svg" />
         </div>
-        <div id="python">
-          <img src="python.svg" />
+        <div class="logogaps">
+          <img src="svgs/python.svg" />
         </div>
-        <div id="html">
-          <img src="html.svg" />
+        <div class="logogaps">
+          <img src="svgs/html.svg" />
         </div>
-        <div id="css">
-          <img src="css.svg" />
+        <div class="css">
+          <img src="svgs/css.svg" />
         </div>
       </div>
     </div>
   </div>
-  <div id="divfourfive"></div>
-  <div id="divfive">
+  <div id="divfive"></div>
+  <div class="divs">
     <div id="pagezero">
       <div class="titlethick">PORTFOLIO</div>
       <div class="slide hi-slide">
         <div class="hi-prev "></div>
-        <div class="hi-next "></div>
         <ul>
           <li><img src="dogastro.jpg" alt="Img 1" /></li>
           <li><img src="gnm.jpg" alt="Img 2" /></li>
@@ -441,11 +450,45 @@
           <li><img src="dogastro.jpg" alt="Img 7" /></li>
           <li><img src="dogastro.jpg" alt="Img 7" /></li>
         </ul>
+        <div class="hi-next "></div>
+      </div>
+      <div class="gallery">
+        <div class="column">
+          <img src="Pictures/cat1.jpg">
+          <img src="Pictures/flower1.jpg">
+          <img src="Pictures/shells.jpg">
+          <img src="Pictures/buildings1.jpg">
+          <img src="Pictures/band.jpg">
+          <img src="Pictures/mushrooms.jpg">
+          <img src="Pictures/butterfly.jpg">
+        </div>
+        <div class="column">
+          <img src="Pictures/water.jpg">
+          <img src="Pictures/dog2.jpg">
+          <img src="Pictures/people.jpg">
+          <img src="Pictures/cat3.jpg">
+          <img src="Pictures/flower2.jpg">
+        </div>
+        <div class="column">
+          <img src="Pictures/insect.jpg">
+          <img src="Pictures/boat.jpg">
+          <img src="Pictures/cat2.jpg">
+          <img src="Pictures/buildings2.jpg">
+          <img src="Pictures/deer.jpg">
+        </div>
+        <div class="column">
+          <img src="Pictures/flower3.jpg">
+          <img src="Pictures/dogs.jpg">
+          <img src="Pictures/sun1.jpg">
+          <img src="Pictures/cats.jpg">
+          <img src="Pictures/mountains1.jpg">
+          <img src="Pictures/dog1.jpg">
+        </div>
       </div>
     </div>
   </div>
-  <div id="divfivesix"></div>
-  <div id="divsix">
+  <div id="divsix"></div>
+  <div class="divs">
     <div id="pagezero">
       <span class="titlethick">CONTACT </span>
       <span class="titlethin">ME</span>
@@ -468,24 +511,21 @@
         </div>
       </div>
       <div id="socials">
-        <a href=""><img src="insta.svg"></a>
-        <a href="https://www.facebook.com/jonathan.ryan.9484" target="_blank" rel="noopener noreferrer"><img src="fb.svg"></a>
-        <a href="https://twitter.com/Jonathanryndolf" target="_blank" rel="noopener noreferrer"><img src="twitter.svg"></a>
-        <a href="https://api.whatsapp.com/send?phone=9790766522" target="_blank" rel="noopener noreferrer"><img src="whatsapp.svg"></a>
-        <a href="https://t.me/RYNDOLF" target="_blank" rel="noopener noreferrer"><img src="telegram.svg"></a>
-        <a href="https://www.linkedin.com/in/jonathan-ryndolf-86a088200/?originalSubdomain=in" target="_blank" rel="noopener noreferrer"><img src="linkedin.svg"></a>
-        <a href="https://discord.gg/Gz9pQJhJCm" target="_blank" rel="noopener noreferrer"><img src="discord.svg"></a>
-        <a href="https://www.youtube.com/channel/UCeMcCNtvQe6ecVnm_RrWzng/featured" target="_blank" rel="noopener noreferrer"><img src="yt.svg"></a>
-        <a href="https://github.com/Ryndolf" target="_blank" rel="noopener noreferrer"><img src="github.svg"></a>
+        <a href=""><img src="svgs/insta.svg"></a>
+        <a href="https://www.facebook.com/jonathan.ryan.9484" target="_blank" rel="noopener noreferrer"><img src="svgs/fb.svg"></a>
+        <a href="https://twitter.com/Jonathanryndolf" target="_blank" rel="noopener noreferrer"><img src="svgs/twitter.svg"></a>
+        <a href="https://api.whatsapp.com/send?phone=9790766522" target="_blank" rel="noopener noreferrer"><img src="svgs/whatsapp.svg"></a>
+        <a href="https://t.me/RYNDOLF" target="_blank" rel="noopener noreferrer"><img src="svgs/telegram.svg"></a>
+        <a href="https://www.linkedin.com/in/jonathan-ryndolf-86a088200/?originalSubdomain=in" target="_blank" rel="noopener noreferrer"><img src="svgs/linkedin.svg"></a>
+        <a href="https://discord.gg/Gz9pQJhJCm" target="_blank" rel="noopener noreferrer"><img src="svgs/discord.svg"></a>
+        <a href="https://www.youtube.com/channel/UCeMcCNtvQe6ecVnm_RrWzng/featured" target="_blank" rel="noopener noreferrer"><img src="svgs/yt.svg"></a>
+        <a href="https://github.com/Ryndolf" target="_blank" rel="noopener noreferrer"><img src="svgs/github.svg"></a>
       </div>
     </div>
   </div>
-  <button onclick="myFunction()">Click me</button>
 </body>
+<button class="switchbtn" onclick="toggleTheme()">Switch</button>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script type="text/javascript" src="js/jquery.hislide.js"></script>
-<script>
-  $('.slide').hiSlide();
-</script>
-
+<script src="js/script.js"></script>
 </html>
